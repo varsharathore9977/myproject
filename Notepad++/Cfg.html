@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>Books</title>
+<link rel="stylesheet" type="text/css" href="book.css">
+
+<center>
+<font color='Orange' size='13' face 'impact'>WELCOME TO MY LIBRARY</font>
+</head>
+
+<body style="#FFF">
+<div id="menu">
+
+<ul>
+ 
+ <li><a href="Book.html">HOME  </a></li>
+ 
+ <li><a href="About.html">ABOUT US  </a></li>
+ <li><a href="Cpp.html">CPP </a></li>
+ <li><a href="Contact.html">CONTACT US </a></li>
+ <li><a href="Toc.html">TOC</a></li>
+ <li><a href="Software.html">SOFTWARE</a></h1>
+ <li><a href="Dbms.html">DBMS</a></li><br>
+ </ul>
+</div>
+
+ </center>
+ 
+ 
+ 
+ 
+ <div class="navigation">
+
+
+ <ul>
+
+ 
+ 
+ <li id="a2" class="nav none"><a id="a2" href="Toc.html">Automata</a></li><br>
+ <li id="a2" class="nav none"><a id="a2" href="Toc.html">TOC</a></li><br>
+  <li id="a2" class="nav none"><a id="a2" href="Cfg.html">CFG</a></li><br>
+ <li id="a2" class="nav none"><a id="a2" href="Contact.html">CONTACT</a></li><br>
+
+ </ul>
+  
+ </div>
+ 
+ 
+<div class="root">
+
+<b><i><font color='red'><h2><u>Context-Free Grammar (CFG)</u></h2></font></i></b>
+<p>
+CFG stands for context-free grammar. It is is a formal grammar which is used to generate all possible patterns of strings in a given formal language. Context-free grammar G can be defined by four tuples as:
+</p><br>
+<h2>G = (V, T, P, S)  </h2><br>
+Where,<br>
+
+G is the grammar, which consists of a set of the production rule. It is used to generate the string of a language.<br>
+
+T is the final set of a terminal symbol. It is denoted by lower case letters.<br>
+
+V is the final set of a non-terminal symbol. It is denoted by capital letters.<br>
+
+P is a set of production rules, which is used for replacing non-terminals symbols(on the left side of the production) in a string with other terminal or non-terminal symbols(on the right side of the production).
+<br>
+
+S is the start symbol which is used to derive the string. We can derive the string by repeatedly replacing a non-terminal by the right-hand side of the production until all non-terminal have been replaced by terminal symbols.<br>
+
+<b>Example 1:</b><br>
+Construct the CFG for the language having any number of a's over the set ∑= {a}.<br>
+
+Solution:<br>
+
+As we know the regular expression for the above language is<br>
+
+r.e. = a*     <br>
+Production rule for the Regular expression is as follows:<br>
+
+S → aS    rule 1  <br>
+S → ε     rule 2  <br>
+Now if we want to derive a string "aaaaaa", we can start with start symbols.<br>
+
+
+ S  <br>
+aS   <br>
+aaS          rule 1  <br>
+aaaS         rule 1  <br>
+aaaaS        rule 1  <br>
+aaaaaS       rule 1  <br>
+aaaaaaS      rule 1  <br>
+aaaaaaε      rule 2  <br>
+aaaaaa  <br>
+The r.e. = a* can generate a set of string {ε, a, aa, aaa,.....}. We can have a null string because S is a start symbol and rule 2 gives S → ε.<br>
+</div>
+
+
+
+   </body>
+ 
+
+ 
+ 
+</html>

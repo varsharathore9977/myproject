@@ -1,0 +1,11 @@
+.root{
+	
+	
+	justify-content:center;
+	align-items:cnter;
+	display:'flex';
+	background-color:black;
+	width:150px;
+	height:600px;
+	
+	}
